@@ -1,39 +1,165 @@
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style> 
- 
-body, html {
-height: 100%; 
-margin: 0;
-font-family: Arial; 
-}
-.tablink { 
-background-color: #555;
-color: white;
-float: center;
-border: none;
-curser: grab; 
-padding: 18px 20px;
-font-size: 17px;
-width: 25%;
-}
-.tablink:hover {
-background-colo: rgb(140, 132, 150); 
-}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-.tabcontent {
-color: grey;
-display: none:
-padding: 100px 20px;
-height: 100%;
-} 
-</style>
-<title> Indian Legendar </title>
+    <title>INDIAN LEGENDAR </title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 </head>
 <body>
+ 
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">INDIAN LEGENDAR </a>
+            </li>
+            <li>
+                <a href="#top">Home</a>
+            </li>
+           
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>I N D I A N </h1>
+            <h3>L E G E N D A R</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Welcome to Indian Legendar aka IL </h2>
+                    <p class="lead">IN1 Server (GOODGAME EMPIRE) </p>
+                </div>
+            </div>
+           
+        </div>
+       
+    </section>
 
-Welcome to Indian Legendar 
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+               
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <a href="#" class="btn btn-dark">View More Items</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    
+  
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong> CONTACT US </strong>
+                    </h4>
+                    <p>Link to the discord server will be added later. </p>
+                    <p> Open to all </p> 
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> Will be added later </li>
+                        <li><i class="fa fa-envelope-o fa-fw">Will be added later</i> 
+                        </li>
+                    </ul>
+                    
+                        
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  
+    <script src="js/jquery.js"></script>
+
+   
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+   
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 
 </body>
-</html> 
+
+</html>
